@@ -102,6 +102,28 @@ button:hover {
   /* z-index: -1; */
 }
 
+#footer {
+  padding: 15px;
+  color: violet;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: white;
+}
+#footer .cp-sign {
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
 /* @media (max-width: 1250px) {
   #hero #hero-image {
     width: 5em;
