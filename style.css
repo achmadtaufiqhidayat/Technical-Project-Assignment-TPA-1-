@@ -1,73 +1,232 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
 }
 
-body{
-    padding: 15px 50px;
-    font-family: 'Poppins', sans-serif;
+body {
+  padding: 15px 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.nav {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
-main{
-    margin: 50px 0px;
+.nav .H1 {
+  font-size: 2em;
+  color: white;
 }
-
-#circle-1{
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    border-radius: 100%;
-    position: absolute;
-    left: -50px;
-    top: 60px;
-    opacity: 50%;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.nav nav ul {
+  list-style: none;
+}
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 50px;
-   
+.nav nav ul a {
+  text-decoration: none;
+  margin: 0.3em;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  color: white;
+}
+
+.nav nav ul a:hover {
+  transition: linear;
+  background: violet;
+  color: black;
+}
+
+#hero {
+  width: 85%;
+  height: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* #hero::before,
+#hero::after {
+  content: "";
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  background: red;
+  bottom: 0;
+  right: -10%;
+  z-index: -10;
+}
+
+#hero::after {
+  background: red;
+  height: 60%;
+  top: 20px;
+  left: -40%;
+  border-top: 1px solid #f9803a;
+  border-right: 1px solid #4985c9;
+  z-index: -11;
+} */
+
+#hero-greeting h1 {
+  font-size: 4.5em;
+  margin-bottom: 0.2em;
+  color: white;
+}
+
+#hero-greeting p {
+  font-size: 1.2em;
+  color: violet;
+  margin-bottom: 1.2em;
+}
+/* #hero-greeting #hero-button {
+  font-size: 1.2em;
+  background: none;
+  color: violet;
+  border: none;
+  cursor: pointer;
+  border: 1px solid violet;
+  width: 7em;
+  height: 2.2em;
+  transition: all 0.4s;
+} */
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+button:hover {
+  background-color: violet;
+}
+
+/* #hero-button button #btn-ct:hover {
+  background-color: blueviolet;
+}
+
+button #btn-ab:hover {
+  background-color: blueviolet;
+} */
+
+/* #hero-greeting #hero-button:hover {
+  background: #f9803a;
+} */
+
+#hero #hero-image {
+  width: 35em;
+  height: 70em;
+  position: absolute;
+  /* right: 7px; */
+  left: 600px;
+  top: 120px;
+  /* z-index: -1; */
+}
+
+/* @media (max-width: 1250px) {
+  #hero #hero-image {
+    width: 5em;
+    height: 10em;
+    right: 0;
+  }
+} */
+/* 
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+  #hero #hero-image {
+    width: 35em;
+    top: 80px;
+  }
+  #hero {
+    align-items: flex-end;
+  }
+} */
+
+/* @media (max-width: 900px) {
+  #hero #hero-image {
+    width: 30em;
+  }
+} */
+/* @media (max-width: 600px) {
+  #hero #hero-image {
+    width: 22em;
+  }
+} */
+
+/* @media (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  #hero {
+    height: 450px;
+  }
+} */
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+/* .fx {
+  position: fixed;
+}
+main {
+  margin: 50px 0px;
+}
+
+#circle-1 {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  border-radius: 100%;
+  position: absolute;
+  left: -50px;
+  top: 60px;
+  opacity: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 50px;
 }
 nav ul a {
-    text-decoration: none;
+  text-decoration: none;
 }
-#hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#hero-greeting h1{
-    margin-bottom: 15px ;
-}
-#hero-greeting p{
-    margin-bottom: 5px ;
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#hero-button button{
-    padding: 10px 20px;
-    border-radius: 20px; 
+#hero-greeting h1 {
+  margin-bottom: 15px;
+}
+#hero-greeting p {
+  margin-bottom: 5px;
 }
 
-#hero-button button:hover{
-    background-color: blueviolet;
+#hero-button button {
+  padding: 10px 20px;
+  border-radius: 20px;
 }
-#hero-image{
-    max-width: 100%;
-    height: auto;
-    
-}
+
+#hero-button button:hover {
+  background-color: blueviolet;
+}*/
+
+/* main section #hero #hero-image {
+  max-width: 20em;
+  height: 50em;
+} */
