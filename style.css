@@ -59,7 +59,7 @@ body {
 
 #hero {
   width: 85%;
-  height: 650px;
+  height: 550px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -96,40 +96,72 @@ button:hover {
   width: 35em;
   height: 70em;
   position: absolute;
-  /* right: 7px; */
+  right: 7px;
   left: 600px;
   top: 120px;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 #hero-content {
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   color: white;
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
-#hero-content h4 {
+#hero-content .h1-ct {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-left: 65px;
   position: relative;
+  /* align-items: flex-start; */
+  /* margin-left: 60px; */
+}
+
+#hero-content .wt-do {
+  display: flex;
+  width: 85%;
+  height: 250px;
+  margin: 0 auto;
+  align-items: flex-start;
+  position: relative;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+#hero-content .wt-do ul {
+  font-size: 14px;
+  padding-right: 50px;
+  flex-grow: 12;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.wt-do #wt-do1 {
+  padding: 3px;
+  margin: 10px;
 }
 
 #hero-contact {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   color: white;
   margin-top: 20px;
-}
-#hero-contact h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  width: 85%;
+  height: 350px;
+  align-items: center;
+  display: block;
   position: relative;
 }
-#hero-contact p {
-  margin-bottom: 0;
+
+#hero-contact #head-contact h4 {
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-left: 65px;
+  position: relative;
 }
 
 #icon-l,
@@ -137,24 +169,30 @@ button:hover {
 #icon-p {
   height: 44px;
   width: 44px;
+  /* padding: auto; */
+  margin: 8px;
 }
 
 .email,
 .phone,
 .address {
   display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 65px;
 }
 
 #footer {
   padding: 15px;
-  color: black;
+  color: white;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 200px;
   z-index: 9999;
-  background: white;
+  background: black;
 }
 #footer .cp-sign {
   text-align: center;
