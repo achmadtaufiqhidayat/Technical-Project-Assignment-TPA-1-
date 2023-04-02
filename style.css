@@ -102,9 +102,52 @@ button:hover {
   /* z-index: -1; */
 }
 
+#hero-content {
+  padding-bottom: 30px;
+  color: white;
+  margin-top: 20px;
+}
+
+#hero-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#hero-contact {
+  padding-bottom: 30px;
+  color: white;
+  margin-top: 20px;
+}
+#hero-contact h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+#hero-contact p {
+  margin-bottom: 0;
+}
+
+#icon-l,
+#icon-e,
+#icon-p {
+  height: 44px;
+  width: 44px;
+}
+
+.email,
+.phone,
+.address {
+  display: flex;
+}
+
 #footer {
   padding: 15px;
-  color: violet;
+  color: black;
   font-size: 14px;
   position: fixed;
   left: 0;
