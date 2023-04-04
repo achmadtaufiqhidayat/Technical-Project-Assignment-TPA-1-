@@ -48,6 +48,10 @@ body {
   margin-bottom: 30px;
 }
 
+.card-pro:hover {
+  box-shadow: 0 8px 16px 0 violet;
+}
+
 .img-port {
   align-items: center;
   margin: 15px;
