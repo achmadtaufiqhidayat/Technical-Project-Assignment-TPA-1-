@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -5,14 +7,14 @@ body {
   line-height: 1.5;
 }
 
-.main-blog {
+#main-blog {
   max-width: 400px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  /* justify-content: space-between; */
 }
 
-.main-blog #card-blog1 {
+#main-blog #card-blog1 {
   box-shadow: 0 4px 0 rgba(255, 255, 255, 0.2);
   transition: 0.3s;
   height: fit-content;
@@ -20,9 +22,10 @@ body {
   color: white;
   border: 2px solid white;
   border-radius: 15px;
+  margin: 25px;
 }
 
-.main-blog #card-blog1:hover {
+#main-blog #card-blog1:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -30,16 +33,24 @@ body {
   padding: 2px 16px;
 }
 
-.main-ci {
+#main-ci {
+  margin: 25px;
   border-radius: 15px;
   width: fit-content;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   height: 200px;
 }
 #text-blog {
   color: white;
+  margin: 25px 2px 25px 2px;
+}
+#text-blog p {
+  font-size: 12px;
+}
+#text-blog button {
+  font-size: 12px;
 }
 /* aside {
   width: 30%;
@@ -49,3 +60,25 @@ body {
   font-style: italic;
   background-color: lightgray;
 } */
+
+#footerB {
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 9999;
+  background: black;
+}
+#footerB .cp-signB {
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  #footerB {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
