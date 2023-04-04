@@ -94,9 +94,9 @@ button:hover {
 
 #hero #hero-image {
   width: 35em;
-  height: 70em;
+  height: 100em;
   position: absolute;
-  right: 7px;
+  right: 107px;
   left: 600px;
   top: 120px;
   z-index: -1;
