@@ -7,15 +7,17 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  top: 30px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .profil {
   flex-basis: 60%;
-  padding: 20px;
+  padding: 15px;
   background-color: whitesmoke;
   border-radius: 20px 0px 0px 20px;
 }
